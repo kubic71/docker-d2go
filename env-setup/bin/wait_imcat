@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+# use read 
+# while not pressed 'q', keep looping
+
+while true
+do
+    fish -c "imcat $1"
+    read -n 1 num
+    if [ "${num}" = 'q' ]
+    then
+        break
+    fi
+done
